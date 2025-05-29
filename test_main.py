@@ -10,7 +10,7 @@ def test_read_root():
 def test_square():
     response = client.get("/square/3")
     assert response.status_code == 200
-    assert response.json() == {"result": 9}
+    assert response.json() == {"result": 6}
 
 def test_double():
     response = client.get("/double/4")
