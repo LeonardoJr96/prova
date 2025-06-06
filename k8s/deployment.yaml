@@ -1,11 +1,19 @@
-apiVersion: v1
-kind: Service
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   name: prova
 spec:
+  replicas: 3
   selector:
-    app: prova
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 8000
+    matchLabels:
+      app: prova
+  template:
+    metadata:
+      labels:
+        app: prova
+    spec:
+      containers:
+        - name: prova
+          image: leonardojr96/ci-sum-python
+          ports:
+            - containerPort: 8000
