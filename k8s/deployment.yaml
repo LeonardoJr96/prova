@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prova
+spec:
+    replicas: 3
+    selector:
+        matchLabels:
+        app: prova
+    template:
+        metadata:
+        labels:
+            app: prova
+        spec:
+        containers:
+        - name: prova
+            image: leonardojr96/ci-sum-python
+            ports:
+            - containerPort: 8000
