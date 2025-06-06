@@ -1,9 +1,0 @@
-mapiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-resources:
-  - deployment.yaml
-  - service.yaml
-images:
-  - name: prova
-    newName: leonardojr96/ci-sum-python
-    newTag: b02ca4ec28ac0cec1ae8043e9e29aa135d56537d
