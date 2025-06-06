@@ -1,0 +1,9 @@
+mapiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - deployment.yaml
+  - service.yaml
+images:
+  - name: hello-fastapi
+    newName: leonardojr96/ci-sum-python
+    newTag: c58b625834eb8b45c0d3d3b45ba4cbc288fc5146
