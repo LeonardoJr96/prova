@@ -15,5 +15,5 @@ spec:
         containers:
         - name: prova
             image: leonardojr96/ci-sum-python
-            ports:
+            ports: 80
             - containerPort: 8000
