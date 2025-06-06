@@ -6,4 +6,4 @@ resources:
 images:
   - name: prova
     newName: leonardojr96/ci-sum-python
-    newTag: 400210834eaa450aa3a83824e56a57e7ea5d9609
+    newTag: b02ca4ec28ac0cec1ae8043e9e29aa135d56537d
